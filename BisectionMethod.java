@@ -9,9 +9,9 @@ public class BisectionMethod {
         System.out.println("Enter the value of initial guess: ");
         double a = in.nextDouble();
         double b = in.nextDouble();
-        double error = 0.0001;
+        double tolerance = 0.0001;
         double c = 0;
-        while(Math.abs((a - b) / b) > error){
+        while(Math.abs((a - b) / b) > tolerance){
             c = (a + b) / 2;
             if(function(a) * function(c) > 0){
                 a = c;
