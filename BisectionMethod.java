@@ -11,6 +11,7 @@ public class BisectionMethod {
         double b = in.nextDouble();
         double tolerance = 0.0001;
         double c = 0;
+        // Algorithm to be executed
         while(Math.abs((a - b) / b) > tolerance){
             c = (a + b) / 2;
             if(function(a) * function(c) > 0){
